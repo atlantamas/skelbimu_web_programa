@@ -9,18 +9,22 @@ export default {
     module: {
         rules: [
             {
-                test: /\.jsx/,
-                exclude:/node_modules/,
-                use:{
+                test: /\.jsx$/,
+                exclude: /node_modules/,
+                use:
+                {
                     loader: "babel-loader",
                     options:
                     {
-                        presents:["@babel/preset-react"]
+                        presets: ["@babel/preset-react"]
                     }
                 }
-
             }
         ]
     },
-    devtool: "source-map"
+    devtool: "source-map",
+    cache: false,
+    experiments: {
+        topLevelAwait: true
+    }
 }

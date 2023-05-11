@@ -1,13 +1,733 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/App.jsx":
 /*!*********************!*\
   !*** ./src/App.jsx ***!
   \*********************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: Unknown option: .presents. Check out https://babeljs.io/docs/en/babel-core/#options for more information about options.\n    at validate (C:\\Users\\user\\Desktop\\Atlantamas\\skelbimu_web_programa\\frontend\\node_modules\\@babel\\core\\lib\\config\\validation\\options.js:86:25)\n    at loadPrivatePartialConfig (C:\\Users\\user\\Desktop\\Atlantamas\\skelbimu_web_programa\\frontend\\node_modules\\@babel\\core\\lib\\config\\partial.js:58:50)\n    at loadPrivatePartialConfig.next (<anonymous>)\n    at Object.<anonymous> (C:\\Users\\user\\Desktop\\Atlantamas\\skelbimu_web_programa\\frontend\\node_modules\\@babel\\core\\lib\\config\\partial.js:122:25)\n    at Generator.next (<anonymous>)\n    at step (C:\\Users\\user\\Desktop\\Atlantamas\\skelbimu_web_programa\\frontend\\node_modules\\gensync\\index.js:261:32)\n    at evaluateAsync (C:\\Users\\user\\Desktop\\Atlantamas\\skelbimu_web_programa\\frontend\\node_modules\\gensync\\index.js:291:5)\n    at C:\\Users\\user\\Desktop\\Atlantamas\\skelbimu_web_programa\\frontend\\node_modules\\gensync\\index.js:93:9\n    at new Promise (<anonymous>)\n    at Object.async (C:\\Users\\user\\Desktop\\Atlantamas\\skelbimu_web_programa\\frontend\\node_modules\\gensync\\index.js:92:14)");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app_states.mjs */ "./src/app_states.mjs");
+/* harmony import */ var _Overlay_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Overlay.jsx */ "./src/Overlay.jsx");
+/* harmony import */ var _pages_page_administratoriaus_sasaja_Page_administratoriaus_sasaja_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/page_administratoriaus_sasaja/Page_administratoriaus_sasaja.jsx */ "./src/pages/page_administratoriaus_sasaja/Page_administratoriaus_sasaja.jsx");
+/* harmony import */ var _pages_page_naudotojo_prisijungimas_Page_naudotojo_prisijungimas_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/page_naudotojo_prisijungimas/Page_naudotojo_prisijungimas.jsx */ "./src/pages/page_naudotojo_prisijungimas/Page_naudotojo_prisijungimas.jsx");
+/* harmony import */ var _pages_page_naudotojo_registarcija_Page_naudotojo_registracija_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/page_naudotojo_registarcija/Page_naudotojo_registracija.jsx */ "./src/pages/page_naudotojo_registarcija/Page_naudotojo_registracija.jsx");
+/* harmony import */ var _pages_page_skelbimai_Page_skelbimai_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/page_skelbimai/Page_skelbimai.jsx */ "./src/pages/page_skelbimai/Page_skelbimai.jsx");
+/* harmony import */ var _pages_page_skelbimo_ivedimas_Page_skelbimo_ivedimas_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/page_skelbimo_ivedimas/Page_skelbimo_ivedimas.jsx */ "./src/pages/page_skelbimo_ivedimas/Page_skelbimo_ivedimas.jsx");
+/* harmony import */ var _pages_page_skelbimu_valdymas_Page_skelbimu_valdymas_jsx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/page_skelbimu_valdymas/Page_skelbimu_valdymas.jsx */ "./src/pages/page_skelbimu_valdymas/Page_skelbimu_valdymas.jsx");
+
+
+
+
+
+
+
+
+
+const App = function () {
+  const [state_page, set_state_page] = react__WEBPACK_IMPORTED_MODULE_0___default().useState("Page_naudotojo_prisijungimas");
+  _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_page = set_state_page;
+  const [state_overlay_message, set_state_overlay_message] = react__WEBPACK_IMPORTED_MODULE_0___default().useState("");
+  _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_overlay_message = set_state_overlay_message;
+  const [state_username, set_state_username] = react__WEBPACK_IMPORTED_MODULE_0___default().useState("");
+  _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].state_username = state_username;
+  _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_username = set_state_username;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, function () {
+    if (state_page === "Page_naudotojo_registracija") return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_page_naudotojo_registarcija_Page_naudotojo_registracija_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null);
+    if (state_page === "Page_naudotojo_prisijungimas") return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_page_naudotojo_prisijungimas_Page_naudotojo_prisijungimas_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null);
+    if (state_page === "Page_skelbimo_ivedimas") return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_page_skelbimo_ivedimas_Page_skelbimo_ivedimas_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null);
+    if (state_page === "Page_skelbimu_valdymas") return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_page_skelbimu_valdymas_Page_skelbimu_valdymas_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], null);
+    if (state_page === "Page_administratoriaus_sasaja") return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_page_administratoriaus_sasaja_Page_administratoriaus_sasaja_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null);
+    if (state_page === "Page_skelbimai") return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_page_skelbimai_Page_skelbimai_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], null);
+  }(), function () {
+    if (state_overlay_message !== "") return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Overlay_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      message: state_overlay_message
+    });
+  }());
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
+
+/***/ }),
+
+/***/ "./src/Overlay.jsx":
+/*!*************************!*\
+  !*** ./src/Overlay.jsx ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const Overlay = function (props) {
+  // props
+
+  const message = props.message;
+
+  //
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: {
+      position: "fixed",
+      left: "0",
+      right: "0",
+      top: "0",
+      bottom: "0",
+      Width: "100%",
+      Height: "100%",
+      padding: "0",
+      border: "0",
+      margin: "0",
+      display: "grid",
+      gridTemplateColumns: "auto",
+      placeContent: "center center",
+      placeItems: "center center",
+      backgroundColor: "rgba(80, 80, 80, 0.9)"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    style: {
+      fontSize: "1em",
+      fontWeight: "bold"
+    }
+  }, message));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Overlay);
+
+/***/ }),
+
+/***/ "./src/components/Header.jsx":
+/*!***********************************!*\
+  !*** ./src/components/Header.jsx ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../app_states.mjs */ "./src/app_states.mjs");
+/* harmony import */ var _Header_admin_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header_admin.jsx */ "./src/components/Header_admin.jsx");
+/* harmony import */ var _Header_guest_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Header_guest.jsx */ "./src/components/Header_guest.jsx");
+/* harmony import */ var _Header_user_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Header_user.jsx */ "./src/components/Header_user.jsx");
+
+
+
+
+
+const Header = function () {
+  const username = _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].state_username;
+
+  //
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, function () {
+    if (username === "") return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Header_guest_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null);
+    if (username === "admin") return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Header_admin_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null);
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Header_user_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null);
+  }());
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
+
+/***/ }),
+
+/***/ "./src/components/Header_admin.jsx":
+/*!*****************************************!*\
+  !*** ./src/components/Header_admin.jsx ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../app_states.mjs */ "./src/app_states.mjs");
+/* harmony import */ var _services_service_sign_out_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/service_sign_out.mjs */ "./src/services/service_sign_out.mjs");
+
+
+
+const Header_admin = function () {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
+    style: {
+      width: "100%",
+      minHeight: "4em",
+      padding: "0",
+      border: "0",
+      margin: "0",
+      textAlign: "right",
+      lineHeight: "4em",
+      boxShadow: "rgb(80, 80, 80) 0 0 0.5em 0"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: async function () {
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_overlay_message("service_sign_out...");
+      const result_of_service_sign_out = await (0,_services_service_sign_out_mjs__WEBPACK_IMPORTED_MODULE_2__["default"])();
+      (0,_services_service_sign_out_mjs__WEBPACK_IMPORTED_MODULE_2__["default"])();
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_overlay_message("");
+    }
+  }, "Page_administratoriaus_sasaja"));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header_admin);
+
+/***/ }),
+
+/***/ "./src/components/Header_guest.jsx":
+/*!*****************************************!*\
+  !*** ./src/components/Header_guest.jsx ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../app_states.mjs */ "./src/app_states.mjs");
+
+
+const Header_guest = function () {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
+    style: {
+      width: "100%",
+      minHeight: "4em",
+      padding: "0",
+      border: "0",
+      margin: "0",
+      textAlign: "right",
+      lineHeight: "4em",
+      boxShadow: "rgb(80, 80, 80) 0 0 0.5em 0"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: function () {
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_page("Pages_skelbimai");
+    }
+  }, "Skelbimai"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: function () {
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_page("Page_naudotojo_prisijungimas");
+    }
+  }, "Prisijungimas"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: function () {
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_page("Page_naudotojo_registracija");
+    }
+  }, "Registracija"));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header_guest);
+
+/***/ }),
+
+/***/ "./src/components/Header_user.jsx":
+/*!****************************************!*\
+  !*** ./src/components/Header_user.jsx ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../app_states.mjs */ "./src/app_states.mjs");
+/* harmony import */ var _services_service_sign_out_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/service_sign_out.mjs */ "./src/services/service_sign_out.mjs");
+
+
+
+const Header_user = function () {
+  const username = _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].state_username;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
+    style: {
+      width: "100%",
+      minHeight: "4em",
+      padding: "0",
+      border: "0",
+      margin: "0",
+      textAlign: "right",
+      lineHeight: "4em",
+      boxShadow: "rgb(80, 80, 80) 0 0 0.5em 0"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: function () {
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_page("Page_skelbimo_ivedimas");
+    }
+  }, "Skelbimo ivedimas"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: function () {
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_page("Pages_skelbimai");
+    }
+  }, "Skelbimai"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: function () {
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_page("Page_skelbimu_valdymas");
+    }
+  }, "Skelbimu valdymas"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    style: {
+      margin: "0 0.5em 0 0.5em",
+      fontWeight: "bold",
+      fontSize: "1em"
+    }
+  }, username), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: async function () {
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_overlay_message("service_sign_out...");
+      const result_of_service_sign_out = await (0,_services_service_sign_out_mjs__WEBPACK_IMPORTED_MODULE_2__["default"])();
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_overlay_message("");
+
+      // error:
+
+      if (result_of_service_sign_out.status === "error") {
+        return;
+      }
+
+      // success
+
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_username("");
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_page("Page_naudotojo_prisijungimas");
+    }
+  }, "Atsijungti"));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header_user);
+
+/***/ }),
+
+/***/ "./src/pages/page_administratoriaus_sasaja/Page_administratoriaus_sasaja.jsx":
+/*!***********************************************************************************!*\
+  !*** ./src/pages/page_administratoriaus_sasaja/Page_administratoriaus_sasaja.jsx ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Header_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/Header.jsx */ "./src/components/Header.jsx");
+
+
+const Page_administratoriaus_sasaja = function () {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Page_administratoriaus_sasaja")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Page_administratoriaus_sasaja);
+
+/***/ }),
+
+/***/ "./src/pages/page_naudotojo_prisijungimas/Page_naudotojo_prisijungimas.jsx":
+/*!*********************************************************************************!*\
+  !*** ./src/pages/page_naudotojo_prisijungimas/Page_naudotojo_prisijungimas.jsx ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../app_states.mjs */ "./src/app_states.mjs");
+/* harmony import */ var _components_Header_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Header.jsx */ "./src/components/Header.jsx");
+/* harmony import */ var _services_service_sign_in_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/service_sign_in.mjs */ "./src/services/service_sign_in.mjs");
+
+
+
+
+const Page_naudotojo_prisijungimas = function () {
+  // refs
+
+  const ref_input_naudotojo_vardas = react__WEBPACK_IMPORTED_MODULE_0___default().useRef();
+  const ref_input_slaptazodis = react__WEBPACK_IMPORTED_MODULE_0___default().useRef();
+
+  // states
+
+  const [state_status_message, set_state_status_message] = react__WEBPACK_IMPORTED_MODULE_0___default().useState();
+
+  //
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
+    style: {
+      width: "100%",
+      height: "auto",
+      padding: "0",
+      border: "0",
+      margin: "0",
+      display: "grid",
+      display: "grid",
+      gridTemplateColumns: " auto",
+      placeContent: "center center",
+      placeItems: "center center"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Page_naudotojo_prisijungimas"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Naudotojo vardas:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    ref: ref_input_naudotojo_vardas,
+    type: "text"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Slaptazodis:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    ref: ref_input_slaptazodis,
+    type: "password"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    style: {
+      margin: "1em 0 0 0"
+    },
+    onClick: async function () {
+      //
+
+      const naudotojo_vardas = ref_input_naudotojo_vardas.current.value;
+      const slaptazodis = ref_input_slaptazodis.current.value;
+
+      // result_of_service_sign_in
+
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_overlay_message("service_sign_in...");
+      const result_of_service_sign_in = await (0,_services_service_sign_in_mjs__WEBPACK_IMPORTED_MODULE_3__["default"])(naudotojo_vardas, slaptazodis);
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_overlay_message("");
+
+      // error: 
+
+      if (result_of_service_sign_in.status === "error") {
+        const error_message = result_of_service_sign_in.message;
+        set_state_status_message(error_message);
+        return;
+      }
+
+      // success
+
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_username(naudotojo_vardas);
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_page("Page_skelbimo_ivedimas");
+    }
+  }, "Prisijunti"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, state_status_message)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Page_naudotojo_prisijungimas);
+
+/***/ }),
+
+/***/ "./src/pages/page_naudotojo_registarcija/Page_naudotojo_registracija.jsx":
+/*!*******************************************************************************!*\
+  !*** ./src/pages/page_naudotojo_registarcija/Page_naudotojo_registracija.jsx ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../app_states.mjs */ "./src/app_states.mjs");
+/* harmony import */ var _components_Header_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Header.jsx */ "./src/components/Header.jsx");
+/* harmony import */ var _services_service_sign_up_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/service_sign_up.mjs */ "./src/services/service_sign_up.mjs");
+
+
+
+
+const Page_naudotojo_registracija = function () {
+  // refs
+
+  const ref_input_naudotojo_vardas = react__WEBPACK_IMPORTED_MODULE_0___default().useRef();
+  const ref_input_slaptazodis_1 = react__WEBPACK_IMPORTED_MODULE_0___default().useRef();
+  const ref_input_slaptazodis_2 = react__WEBPACK_IMPORTED_MODULE_0___default().useRef();
+
+  // states
+
+  const [state_status_message, set_state_status_message] = react__WEBPACK_IMPORTED_MODULE_0___default().useState();
+
+  //
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
+    style: {
+      width: "100%",
+      height: "auto",
+      padding: "0",
+      border: "0",
+      margin: "0",
+      display: "grid",
+      display: "grid",
+      gridTemplateColumns: " auto",
+      placeContent: "center center",
+      placeItems: "center center"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Page_naudotojo_registracija"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Naudotojo vardas:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    ref: ref_input_naudotojo_vardas,
+    type: "text"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Slaptazodis:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    ref: ref_input_slaptazodis_1,
+    type: "password"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Slaptazodis pakartoti:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    ref: ref_input_slaptazodis_2,
+    type: "password"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    style: {
+      margin: "1em 0 0 0"
+    },
+    onClick: async function () {
+      //
+
+      const naudotojo_vardas = ref_input_naudotojo_vardas.current.value;
+      const slaptazodis_1 = ref_input_slaptazodis_1.current.value;
+      const slaptazodis_2 = ref_input_slaptazodis_2.current.value;
+
+      // error: nesutampa slaptazodziai
+
+      if (slaptazodis_1 !== slaptazodis_2) {
+        set_state_status_message("error: nesutampa slaptazodziai");
+        return;
+      }
+
+      // result_of_service_sign_up
+
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_overlay_message("service_sign_up...");
+      const result_of_service_sign_up = await (0,_services_service_sign_up_mjs__WEBPACK_IMPORTED_MODULE_3__["default"])(naudotojo_vardas, slaptazodis_1, slaptazodis_2);
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_overlay_message("");
+
+      // error: 
+
+      if (result_of_service_sign_up.status === "error") {
+        const error_message = result_of_service_sign_up.message;
+        set_state_status_message(error_message);
+        return;
+      }
+
+      // success
+
+      set_state_status_message("success");
+    }
+  }, "Registruoti"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, state_status_message)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Page_naudotojo_registracija);
+
+/***/ }),
+
+/***/ "./src/pages/page_skelbimai/Page_skelbimai.jsx":
+/*!*****************************************************!*\
+  !*** ./src/pages/page_skelbimai/Page_skelbimai.jsx ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../app_states.mjs */ "./src/app_states.mjs");
+/* harmony import */ var _components_Header_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Header.jsx */ "./src/components/Header.jsx");
+/* harmony import */ var _services_service_skelbimai_find_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/service_skelbimai_find.mjs */ "./src/services/service_skelbimai_find.mjs");
+/* harmony import */ var _Skelbimas_list_view_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Skelbimas_list_view.jsx */ "./src/pages/page_skelbimai/Skelbimas_list_view.jsx");
+
+
+
+
+
+const Page_skelbimai = function () {
+  // refs
+
+  const ref_input_paieskos_tekstas = react__WEBPACK_IMPORTED_MODULE_0___default().useRef();
+
+  // state 
+
+  const [state_arr_skelbimai, set_state_arr_skelbimai] = react__WEBPACK_IMPORTED_MODULE_0___default().useState({});
+  const [state_status_message, set_state_status_message] = react__WEBPACK_IMPORTED_MODULE_0___default().useState();
+
+  //
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
+    style: {
+      width: "100%",
+      height: "auto",
+      padding: "0",
+      border: "0",
+      margin: "0",
+      display: "grid",
+      display: "grid",
+      gridTemplateColumns: " auto",
+      placeContent: "center center",
+      placeItems: "center center"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Paieskos tekstas"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    ref: ref_input_paieskos_tekstas,
+    type: "text"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: async function () {
+      //
+
+      const paieskos_tekstas = ref_input_paieskos_tekstas.current.value;
+
+      //
+
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_overlay_message("service_skelbimai_find...");
+      const result_of_service_skelbimai_find = await (0,_services_service_skelbimai_find_mjs__WEBPACK_IMPORTED_MODULE_3__["default"])(paieskos_tekstas);
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_overlay_message("");
+
+      // error:
+
+      if (result_of_service_skelbimai_find.status === "error") {
+        const error_message = result_of_service_skelbimai_find.message;
+        set_state_status_message(error_message);
+        return;
+      }
+      const arr_skelbimai = result_of_service_skelbimai_find.arr_skelbimai;
+
+      // success
+
+      set_state_arr_skelbimai(arr_skelbimai);
+      set_state_status_message("success");
+    }
+  }, "Ieskoti"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Skelbimas_list_view_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    arr_skelbimai: state_arr_skelbimai
+  })));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Page_skelbimai);
+
+/***/ }),
+
+/***/ "./src/pages/page_skelbimai/Skelbimas_list_view.jsx":
+/*!**********************************************************!*\
+  !*** ./src/pages/page_skelbimai/Skelbimas_list_view.jsx ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Header_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/Header.jsx */ "./src/components/Header.jsx");
+
+
+const Skelbimas_list_view = function (props) {
+  // props
+
+  const antraste = props.antraste;
+  const tekstas = props.tekstas;
+  const miestas = props.miestas;
+  const kaina = props.kaina;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, antraste), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, tekstas), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, miestas), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, kaina));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Skelbimas_list_view);
+
+/***/ }),
+
+/***/ "./src/pages/page_skelbimo_ivedimas/Page_skelbimo_ivedimas.jsx":
+/*!*********************************************************************!*\
+  !*** ./src/pages/page_skelbimo_ivedimas/Page_skelbimo_ivedimas.jsx ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../app_states.mjs */ "./src/app_states.mjs");
+/* harmony import */ var _components_Header_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Header.jsx */ "./src/components/Header.jsx");
+/* harmony import */ var _services_services_skelbimai_create_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/services_skelbimai_create.mjs */ "./src/services/services_skelbimai_create.mjs");
+
+
+
+
+const Page_skelbimo_ivedimas = function () {
+  // refs
+
+  const ref_input_antraste = react__WEBPACK_IMPORTED_MODULE_0___default().useRef();
+  const ref_input_tekstas = react__WEBPACK_IMPORTED_MODULE_0___default().useRef();
+  const ref_input_miestas = react__WEBPACK_IMPORTED_MODULE_0___default().useRef();
+  const ref_input_tel_nr = react__WEBPACK_IMPORTED_MODULE_0___default().useRef();
+  const ref_input_kaina = react__WEBPACK_IMPORTED_MODULE_0___default().useRef();
+
+  // states
+
+  const [state_status_message, set_state_status_message] = react__WEBPACK_IMPORTED_MODULE_0___default().useState();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
+    style: {
+      width: "100%",
+      height: "auto",
+      padding: "0",
+      border: "0",
+      margin: "0",
+      display: "grid",
+      display: "grid",
+      gridTemplateColumns: " auto",
+      placeContent: "center center",
+      placeItems: "center center"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Page_skelbimo_ivedimas"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Antra\u0161t\u0117:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    ref: ref_input_antraste,
+    type: "text"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Tekstas:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("textarea", {
+    ref: ref_input_tekstas,
+    type: "text"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Miestas:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    ref: ref_input_miestas,
+    type: "text"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Tel nr:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    ref: ref_input_tel_nr,
+    type: "text"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Kaina:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    ref: ref_input_kaina,
+    type: "text"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    style: {
+      margin: "1em 0 0 0"
+    },
+    onClick: async function () {
+      //
+
+      const antraste = ref_input_antraste.current.value;
+      const tekstas = ref_input_tekstas.current.value;
+      const miestas = ref_input_miestas.current.value;
+      const tel_nr = ref_input_tel_nr.current.value;
+      const kaina = ref_input_kaina.current.value;
+
+      //
+
+      // result_of_services_skelbimai_create
+
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_overlay_message("services_skelbimai_create...");
+      const result_of_services_skelbimai_create = await (0,_services_services_skelbimai_create_mjs__WEBPACK_IMPORTED_MODULE_3__["default"])(antraste, tekstas, miestas, tel_nr, kaina);
+      _app_states_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].set_state_overlay_message("");
+
+      // error: 
+
+      if (result_of_services_skelbimai_create.status === "error") {
+        const error_message = result_of_services_skelbimai_create.message;
+        set_state_status_message(error_message);
+        return;
+      }
+
+      // success
+
+      set_state_status_message("success");
+    }
+  }, "Prid\u0117ti"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, state_status_message)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Page_skelbimo_ivedimas);
+
+/***/ }),
+
+/***/ "./src/pages/page_skelbimu_valdymas/Page_skelbimu_valdymas.jsx":
+/*!*********************************************************************!*\
+  !*** ./src/pages/page_skelbimu_valdymas/Page_skelbimu_valdymas.jsx ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Header_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/Header.jsx */ "./src/components/Header.jsx");
+
+
+const Page_skelbimu_valdymas = function () {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Page_skelbimu_valdymas")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Page_skelbimu_valdymas);
 
 /***/ }),
 
@@ -17,7 +737,6 @@ throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index
   \*************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-"use strict";
 /**
  * @license React
  * react-dom.development.js
@@ -29885,13 +30604,44 @@ if (
 
 /***/ }),
 
+/***/ "./node_modules/react-dom/client.js":
+/*!******************************************!*\
+  !*** ./node_modules/react-dom/client.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+
+var m = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+if (false) {} else {
+  var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+  exports.createRoot = function(c, o) {
+    i.usingClientEntryPoint = true;
+    try {
+      return m.createRoot(c, o);
+    } finally {
+      i.usingClientEntryPoint = false;
+    }
+  };
+  exports.hydrateRoot = function(c, h, o) {
+    i.usingClientEntryPoint = true;
+    try {
+      return m.hydrateRoot(c, h, o);
+    } finally {
+      i.usingClientEntryPoint = false;
+    }
+  };
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/react-dom/index.js":
 /*!*****************************************!*\
   !*** ./node_modules/react-dom/index.js ***!
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 function checkDCE() {
@@ -29935,7 +30685,6 @@ if (false) {} else {
   \*****************************************************/
 /***/ ((module, exports, __webpack_require__) => {
 
-"use strict";
 /* module decorator */ module = __webpack_require__.nmd(module);
 /**
  * @license React
@@ -32686,7 +33435,6 @@ if (
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 if (false) {} else {
@@ -32702,7 +33450,6 @@ if (false) {} else {
   \*************************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
-"use strict";
 /**
  * @license React
  * scheduler.development.js
@@ -33347,13 +34094,376 @@ if (
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/scheduler.development.js */ "./node_modules/scheduler/cjs/scheduler.development.js");
 }
 
+
+/***/ }),
+
+/***/ "./src/app_states.mjs":
+/*!****************************!*\
+  !*** ./src/app_states.mjs ***!
+  \****************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    set_state_page: null,
+    set_state_overlay_message: null,
+    state_username: null,
+    set_state_username: null
+});
+
+/***/ }),
+
+/***/ "./src/services/service_sign_in.mjs":
+/*!******************************************!*\
+  !*** ./src/services/service_sign_in.mjs ***!
+  \******************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const service_sign_in = async function (param_username, param_password)
+{
+    // method
+
+    const request_method = "POST"
+
+    // URI
+
+    const request_URI = "/api/sign_in"
+
+    // request_headers
+
+    const request_headers =
+    {
+        "Content-type": "application/json"
+    }
+
+    // request_body
+
+    const request_body =
+    {
+        username: param_username,
+        password: param_password
+    }
+
+    // fetch
+
+    const result_of_fetch = await fetch(
+        request_URI,
+        {
+            method: request_method,
+            headers: request_headers,
+            body: JSON.stringify(request_body)
+        })
+
+    // error:invalid status code
+
+    if (result_of_fetch.status !== 200 &&
+        result_of_fetch.status !== 400)
+    {
+        return { status: "error", message: " error:invalid status code" }
+    }
+
+    // error:
+
+    if (result_of_fetch.status === 400)
+    {
+        // response_body
+
+        const response_body = await result_of_fetch.json()
+
+        const error_message = response_body.message
+
+        return { status: "error", message: error_message }
+    }
+
+    // success
+
+    return { status: "success" }
+}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (service_sign_in);
+
+/***/ }),
+
+/***/ "./src/services/service_sign_out.mjs":
+/*!*******************************************!*\
+  !*** ./src/services/service_sign_out.mjs ***!
+  \*******************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const service_sign_out = async function (param_username, param_password)
+{
+    // method
+
+    const request_method = "GET"
+
+    // URI
+
+    const request_URI = "/api/sign_out"
+
+    // fetch
+
+    const result_of_fetch = await fetch(
+        request_URI,
+        {
+            method: request_method,
+        })
+
+    // error:invalid status code
+
+    if (result_of_fetch.status !== 200 &&
+        result_of_fetch.status !== 400)
+    {
+        return { status: "error", message: " error:invalid status code" }
+    }
+
+    // error:
+
+    if (result_of_fetch.status === 400)
+    {
+        // response_body
+
+        const response_body = await result_of_fetch.json()
+
+        const error_message = response_body.message
+
+        return { status: "error", message: error_message }
+    }
+
+    // success
+
+    return { status: "success" }
+}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (service_sign_out);
+
+/***/ }),
+
+/***/ "./src/services/service_sign_up.mjs":
+/*!******************************************!*\
+  !*** ./src/services/service_sign_up.mjs ***!
+  \******************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const service_sign_up = async function (param_username, param_password)
+{
+
+    // method
+
+    const request_method = "POST"
+
+    // URI
+
+    const request_URI = "/api/sign_up"
+
+    // request_headers
+
+    const request_headers =
+    {
+        "Content-type": "application/json"
+    }
+
+    // request_body
+
+    const request_body =
+    {
+        username: param_username,
+        password: param_password
+    }
+
+    // fetch
+
+    const result_of_fetch = await fetch(
+        request_URI,
+        {
+            method: request_method,
+            headers: request_headers,
+            body: JSON.stringify(request_body)
+        })
+
+    // error:invalid status code
+
+    if (result_of_fetch.status !== 200 &&
+        result_of_fetch.status !== 400)
+    {
+        return { status: "error", message: " error:invalid status code" }
+    }
+
+    // error:
+
+    if (result_of_fetch.status === 400)
+    {
+        // response_body
+
+        const response_body = await result_of_fetch.json()
+
+        const error_message = response_body.message
+
+        return { status: "error", message: error_message }
+    }
+
+    // success
+
+    return { status: "success" }
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (service_sign_up);
+
+/***/ }),
+
+/***/ "./src/services/service_skelbimai_find.mjs":
+/*!*************************************************!*\
+  !*** ./src/services/service_skelbimai_find.mjs ***!
+  \*************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const service_skelbimai_find = async function (param_paieskos_tekstas)
+{
+    // method
+
+    const request_method = "GET"
+
+    // URI
+
+    const request_URI = `/api/skelbimai/?paieskos_tekstas=${param_paieskos_tekstas}`
+
+    // fetch
+
+    const result_of_fetch = await fetch(
+        request_URI,
+        {
+            method: request_method
+        })
+
+    // error:invalid status code
+
+    if (result_of_fetch.status !== 200 &&
+        result_of_fetch.status !== 400)
+    {
+        return { status: "error", message: " error:invalid status code" }
+    }
+
+    // error:
+
+    if (result_of_fetch.status === 400)
+    {
+        // response_body
+
+        const response_body = await result_of_fetch.json()
+
+        const error_message = response_body.message
+
+        return { status: "error", message: error_message }
+    }
+
+    // success
+
+    return { status: "success" }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (service_skelbimai_find);
+
+/***/ }),
+
+/***/ "./src/services/services_skelbimai_create.mjs":
+/*!****************************************************!*\
+  !*** ./src/services/services_skelbimai_create.mjs ***!
+  \****************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const services_skelbimai_create = async function (param_antraste, param_skelbimo_tekstas, param_miestas, param_tel_nr, param_kaina)
+{
+    // method
+
+    const request_method = "POST"
+
+    // URI
+
+    const request_URI = "/api/skelbimai/"
+
+    // request_headers
+
+    const request_headers =
+    {
+        "Content-type": "application/json"
+    }
+
+    // request_body
+
+    const request_body =
+    {
+        antraste: param_antraste,
+        skelbimo_tekstas: param_skelbimo_tekstas,
+        miestas: param_miestas,
+        tel_nr: param_tel_nr,
+        kaina: param_kaina
+    }
+
+    // fetch
+
+    const result_of_fetch = await fetch(
+        request_URI,
+        {
+            method: request_method,
+            headers: request_headers,
+            body: JSON.stringify(request_body)
+        })
+
+    // error:invalid status code
+
+    if (result_of_fetch.status !== 200 &&
+        result_of_fetch.status !== 400)
+    {
+        return { status: "error", message: " error:invalid status code" }
+    }
+
+    // error:
+
+    if (result_of_fetch.status === 400)
+    {
+        // response_body
+
+        const response_body = await result_of_fetch.json()
+
+        const error_message = response_body.message
+
+        return { status: "error", message: error_message }
+    }
+
+    // success
+
+    return { status: "success" }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (services_skelbimai_create);
 
 /***/ })
 
@@ -33387,6 +34497,35 @@ if (false) {} else {
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -33409,15 +34548,14 @@ if (false) {} else {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 /*!***********************!*\
   !*** ./src/index.mjs ***!
   \***********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var _App_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.jsx */ "./src/App.jsx");
 
 
@@ -33425,11 +34563,11 @@ __webpack_require__.r(__webpack_exports__);
 
 const element_id_root = document.getElementById("root")
 
-const result_of_createRoot = react_dom__WEBPACK_IMPORTED_MODULE_1__.createRoot(element_id_root)
+const result_of_createRoot = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(element_id_root)
 
-const result_of_createElement = react__WEBPACK_IMPORTED_MODULE_0__.createElement(_App_jsx__WEBPACK_IMPORTED_MODULE_2__)
+const result_of_createElement = react__WEBPACK_IMPORTED_MODULE_0__.createElement(_App_jsx__WEBPACK_IMPORTED_MODULE_2__["default"])
 
-result_of_createRoot.reneder(result_of_createElement)
+result_of_createRoot.render(result_of_createElement)
 })();
 
 /******/ })()
