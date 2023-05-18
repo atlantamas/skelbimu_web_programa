@@ -1,5 +1,4 @@
 import React from "react"
-import Header from "../../components/Header.jsx"
 
 const Skelbimas_list_view = function (props)
 {

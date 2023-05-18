@@ -40,10 +40,20 @@ const Header_user = function ()
             {
                 function ()
                 {
-                    app_states.set_state_page("Pages_skelbimai")
+                    app_states.set_state_page("Page_skelbimai")
                 }
             }
         >Skelbimai</button>
+
+        <button
+            onClick=
+            {
+                function ()
+                {
+                    app_states.set_state_page("Page_skelbimo_kategorijos")
+                }
+            }
+        >Skelbimu kategorijos</button>
 
         <button
             onClick=

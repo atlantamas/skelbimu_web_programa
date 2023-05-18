@@ -1,4 +1,4 @@
-const services_skelbimai_create = async function (param_antraste, param_tekstas, param_miestas, param_tel_nr, param_kaina)
+const service_skelbimu_kategorijos = async function ()
 {
     // method
 
@@ -6,7 +6,7 @@ const services_skelbimai_create = async function (param_antraste, param_tekstas,
 
     // URI
 
-    const request_URI = "/api/skelbimai/"
+    const request_URI = "/api/kategorijos/"
 
     // request_headers
 
@@ -19,11 +19,7 @@ const services_skelbimai_create = async function (param_antraste, param_tekstas,
 
     const request_body =
     {
-        antraste: param_antraste,
-        tekstas: param_tekstas,
-        miestas: param_miestas,
-        tel_nr: param_tel_nr,
-        kaina: param_kaina
+       
     }
 
     // fetch
@@ -61,4 +57,4 @@ const services_skelbimai_create = async function (param_antraste, param_tekstas,
 
     return { status: "success" }
 }
-export default services_skelbimai_create
+export default service_skelbimu_kategorijos

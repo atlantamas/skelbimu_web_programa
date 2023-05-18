@@ -29,8 +29,11 @@ const Header_admin = function ()
                 async function ()
                 {
                     app_states.set_state_overlay_message("service_sign_out...")
+
                     const result_of_service_sign_out = await service_sign_out()
-                    service_sign_out()
+
+                    service_sign_out(result_of_service_sign_out)
+
                     app_states.set_state_overlay_message("")
                 }
             }

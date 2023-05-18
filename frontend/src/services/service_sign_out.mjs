@@ -13,7 +13,7 @@ const service_sign_out = async function (param_username, param_password)
     const result_of_fetch = await fetch(
         request_URI,
         {
-            method: request_method,
+            method: request_method
         })
 
     // error:invalid status code

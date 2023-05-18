@@ -27,7 +27,7 @@ const Header_guest = function ()
             {
                 function ()
                 {
-                    app_states.set_state_page("Pages_skelbimai")
+                    app_states.set_state_page("Page_skelbimai")
                 }
             }
         >Skelbimai</button>

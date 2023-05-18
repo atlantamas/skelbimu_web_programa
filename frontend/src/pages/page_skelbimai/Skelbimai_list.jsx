@@ -5,27 +5,27 @@ const Skelbimai_list = function (props)
 {
     // props
 
- const arr_skelbimai = props.arr_skelbimai
+    const arr_skelbimai = props.arr_skelbimai
 
- //
+    //
 
     return <div>
 
         {
-            function()
+            function ()
             {
                 const arr_skelbimai_list_views = []
 
-                for(var i=0; arr_skelbimai.length; i++)
+                for (var i = 0; arr_skelbimai.length; i++)
                 {
                     const skelbimas = arr_skelbimai[i]
 
                     arr_skelbimai_list_views.push(
                         <Skelbimas_list_view
-                        antraste={skelbimas.antraste}
-                        tekstas={skelbimas.tekstas}
-                        miestas={skelbimas.miestas}
-                        kaina={skelbimas.kaina}
+                            antraste={skelbimas.antraste}
+                            tekstas={skelbimas.tekstas}
+                            miestas={skelbimas.miestas}
+                            kaina={skelbimas.kaina}
                         ></Skelbimas_list_view>
                     )
                 }

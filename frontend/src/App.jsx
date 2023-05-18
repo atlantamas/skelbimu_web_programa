@@ -6,7 +6,9 @@ import Page_naudotojo_prisijungimas from "./pages/page_naudotojo_prisijungimas/P
 import Page_naudotojo_registracija from "./pages/page_naudotojo_registarcija/Page_naudotojo_registracija.jsx"
 import Page_skelbimai from "./pages/page_skelbimai/Page_skelbimai.jsx"
 import Page_skelbimo_ivedimas from "./pages/page_skelbimo_ivedimas/Page_skelbimo_ivedimas.jsx"
+import Page_skelbimo_kategorijos from "./pages/page_skelbimo_kategorijos/Page_skelbimo_kategorijos.jsx"
 import Page_skelbimu_valdymas from "./pages/page_skelbimu_valdymas/Page_skelbimu_valdymas.jsx"
+
 
 const App = function ()
 {
@@ -31,6 +33,7 @@ const App = function ()
                 if (state_page === "Page_skelbimu_valdymas") return <Page_skelbimu_valdymas></Page_skelbimu_valdymas>
                 if (state_page === "Page_administratoriaus_sasaja") return <Page_administratoriaus_sasaja></Page_administratoriaus_sasaja>
                 if (state_page === "Page_skelbimai") return <Page_skelbimai></Page_skelbimai>
+                if (state_page === "Page_skelbimo_kategorijos") return <Page_skelbimo_kategorijos></Page_skelbimo_kategorijos>
             }()
         }
         {

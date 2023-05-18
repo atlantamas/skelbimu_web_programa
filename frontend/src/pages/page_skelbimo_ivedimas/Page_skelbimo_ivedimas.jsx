@@ -39,7 +39,6 @@ const Page_skelbimo_ivedimas = function ()
                 }
             }
         >
-
             <h1>Page_skelbimo_ivedimas</h1>
 
             <span>Antraštė:</span>
@@ -50,7 +49,7 @@ const Page_skelbimo_ivedimas = function ()
             <span>Tekstas:</span>
             <textarea
                 ref={ref_input_tekstas}
-                type="text"></textarea>
+            ></textarea>
 
             <span>Miestas:</span>
             <input

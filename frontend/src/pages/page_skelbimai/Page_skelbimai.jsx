@@ -10,7 +10,6 @@ const Page_skelbimai = function ()
 
     const ref_input_paieskos_tekstas = React.useRef()
 
-
     // state 
 
     const [state_arr_skelbimai, set_state_arr_skelbimai] = React.useState({})
@@ -72,19 +71,22 @@ const Page_skelbimai = function ()
                             return
                         }
 
-                        const arr_skelbimai = result_of_service_skelbimai_find.arr_skelbimai
+                        const skelbimai = result_of_service_skelbimai_find.skelbimai
 
                         // success
 
-                        set_state_arr_skelbimai(arr_skelbimai)
+                        set_state_arr_skelbimai(skelbimai)
                         set_state_status_message("success")
                     }
 
-                }>Ieskoti</button>
+                }>Ieskoti
+                </button>
+
+                <div>{JSON.stringify(state_arr_skelbimai)}</div>
 
             <Skelbimas_list_view
             
-                arr_skelbimai={state_arr_skelbimai}>
+                skelbimai={state_arr_skelbimai}>
 
             </Skelbimas_list_view>
         </main>

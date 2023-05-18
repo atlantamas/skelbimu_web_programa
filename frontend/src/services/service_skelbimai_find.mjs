@@ -8,7 +8,9 @@ const service_skelbimai_find = async function (param_paieskos_tekstas)
 
     const request_URI = `/api/skelbimai/?paieskos_tekstas=${param_paieskos_tekstas}`
 
+    //
     // fetch
+    //
 
     const result_of_fetch = await fetch(
         request_URI,
@@ -37,8 +39,15 @@ const service_skelbimai_find = async function (param_paieskos_tekstas)
         return { status: "error", message: error_message }
     }
 
-    // success
+    const response_body = await result_of_fetch.json()
 
-    return { status: "success" }
+    const skelbimai = response_body.skelbimai
+
+    //
+    // success
+    //
+
+    return { status: "success", skelbimai: skelbimai }
 }
+
 export default service_skelbimai_find
