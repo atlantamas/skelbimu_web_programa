@@ -47,8 +47,13 @@ const controller_skelbimai_find = async function (req, res)
     //
 
     const result_of_model_skelbimai_find = await model_skelbimai_find(
-        { "$text": { "$search": paieskos_tekstas } },
-        { _id: 1, antraste: 1, tekstas: 1, miestas: 1 },
+        {
+            tekstas: {
+                "$regex": `${paieskos_tekstas}`,
+                "$options": "i"
+            }
+        },
+        { _id: 1, antraste: 1, tekstas: 1, miestas: 1, kaina:1 },
         10,
         0
     )
@@ -64,14 +69,14 @@ const controller_skelbimai_find = async function (req, res)
         return
     }
 
-    const arr_skelbimai = result_of_model_skelbimai_find.arr_skelbimai
+    const skelbimai = result_of_model_skelbimai_find.skelbimai
 
     //
     // success
     //
 
     res.statusCode = 200
-    res.json({ arr_skelbimai: arr_skelbimai })
+    res.json({ skelbimai: skelbimai })
 }
 
 export default controller_skelbimai_find

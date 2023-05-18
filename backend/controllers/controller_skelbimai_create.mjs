@@ -83,7 +83,7 @@ const controller_skelbimai_create = async function (req, res)
 
     const kaina = req.body.kaina
 
-    const indentification_token = req.cookies.indentification_token
+    const identification_token = req.cookies.identification_token
 
     //
     // validate_input
@@ -95,10 +95,11 @@ const controller_skelbimai_create = async function (req, res)
         miestas,
         tel_nr,
         kaina,
-        indentification_token
+        identification_token
     )
 
     // error: 
+
     if (result_of_validate_inputs.status === " error")
     {
         const error_message = result_of_validate_inputs.message
@@ -113,7 +114,7 @@ const controller_skelbimai_create = async function (req, res)
     //
 
     const result_of_model_users_raed = await model_users_raed(
-        { indentification_token: indentification_token },
+        { identification_token: identification_token},
         { _id: 0, username: 1 }
     )
 
@@ -141,7 +142,6 @@ const controller_skelbimai_create = async function (req, res)
         miestas,
         tel_nr,
         kaina,
-
     )
 
     // error:

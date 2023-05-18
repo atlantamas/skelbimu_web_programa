@@ -3,35 +3,35 @@ import config_users from "../config/config_users.mjs"
 
 const mongodb_client = new mongodb.MongoClient(config_users.URI)
 
-const model_users_count = async function (param_query, param_limit)
+const model_kategorijos_create = async function (
+    param_username,
+    param_password)
 {
-    // query
 
-    const query = param_query
-  
-    // options
+    // document
 
-    const options =
+    const document =
     {
-        limit: param_limit
+        username: param_username,
+        password: param_password,
+        role: "user"
     }
 
-    //
-    // find document
-    //
+    // result_of_insertOne
 
-    var result_of_countDocuments
+    var result_of_insertOne
 
     try
     {
-        result_of_countDocuments = await mongodb_client
+        result_of_insertOne = await mongodb_client
             .db(config_users.datebase)
             .collection(config_users.collection)
-            .countDocuments(query,options)
-            
+            .insertOne(document)
     }
     catch (err)
     {
+        mongodb_client.close()
+
         //error: datebase query failed 
 
         return { status: "error", message: "error: datebase query failed" }
@@ -41,7 +41,7 @@ const model_users_count = async function (param_query, param_limit)
     // success
     //
 
-    return { status: "success", count: result_of_countDocuments }
+    return { status: "success" }
 }
 
-export default model_users_count
+export default model_kategorijos_create

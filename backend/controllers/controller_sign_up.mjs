@@ -87,8 +87,7 @@ const controller_sign_up = async function (req, res)
     // hash_of_salted_password
     //
 
-    const salt = "labas"
-    const salted_password = password + salt
+    const salted_password = password + config_users.salt
     const hash_of_salted_password = hash_sha256_base64(salted_password)
 
     //

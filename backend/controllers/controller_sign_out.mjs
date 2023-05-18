@@ -24,9 +24,9 @@ const controller_sign_out = async function (req, res)
     // result_of_validate_inputs
     //
 
-    const indentification_token = req.cookies.indentification_token
+    const identification_token = req.cookies.identification_token
 
-    const result_of_validate_inputs = validate_inputs(indentification_token)
+    const result_of_validate_inputs = validate_inputs(identification_token)
 
     // error: password invalid
 
@@ -44,7 +44,7 @@ const controller_sign_out = async function (req, res)
     //
 
     const result_of_model_users_raed = await model_users_raed(
-        { indentification_token: indentification_token },
+        { identification_token: identification_token },
         { _id: 0, username: 1 }
     )
 
@@ -67,7 +67,7 @@ const controller_sign_out = async function (req, res)
 
     const result_of_model_users_update = model_users_update(
         { username: username },
-        { indentification_token: "" }
+        { identification_token: "" }
     )
 
     // error:
@@ -85,7 +85,7 @@ const controller_sign_out = async function (req, res)
     // success
     //
 
-    res.cookie("indentification_token", indentification_token, { httpOnly: true, maxAge: 0 })
+    res.cookie("indentification_token", identification_token, { httpOnly: true, maxAge: 0 })
 
     res.statusCode = 200
     res.end()

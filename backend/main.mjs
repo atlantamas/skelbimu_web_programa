@@ -5,6 +5,7 @@ import controller_sign_in from "./controllers/controller_sign_in.mjs"
 import controller_sign_out from "./controllers/controller_sign_out.mjs"
 import controller_skelbimai_create from "./controllers/controller_skelbimai_create.mjs"
 import controller_skelbimai_find from "./controllers/controller_skelbimai_find.mjs"
+import controller_kategorijos_create from "./controllers/controller_kategorijos_create.mjs"
 
 const express_1 = express()
 
@@ -28,6 +29,7 @@ express_1.post("/api/sign_in", controller_sign_in)
 express_1.get("/api/sign_out", controller_sign_out)
 express_1.post("/api/skelbimai/", controller_skelbimai_create)
 express_1.get("/api/skelbimai/", controller_skelbimai_find)
+express_1.post("/api/kategorijos/", controller_kategorijos_create)
 
 //
 

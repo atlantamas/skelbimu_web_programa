@@ -33,14 +33,14 @@ const model_users_raed = async function (param_query, param_projection)
     {
         //error: datebase query failed 
 
-        return { status: "error", message: "error:datebase query failed" }
+        return { status: "error", message: "error: datebase query failed" }
     }
 
     // error: document does not exists
 
     if (result_of_findOne === null)
     {
-        return { status: "error", message: "error:document does not exists" }
+        return { status: "error", message: "error: document does not exists" }
     }
 
     //

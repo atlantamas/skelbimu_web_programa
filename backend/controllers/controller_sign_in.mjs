@@ -1,4 +1,5 @@
 import config_users from "../config/config_users.mjs"
+import model_users_update from "../models/model_users_update.mjs"
 import model_users_raed from "../models/model_user_read.mjs"
 import generate_random_string from "../utils/generate_random_string.mjs"
 import hash_sha256_base64 from "../utils/hash_sha256_base64.mjs"
@@ -24,7 +25,7 @@ const validate_inputs = function (param_username, param_password)
 
     if (password === undefined ||
         typeof password !== "string" ||
-        config_users.regexp_password.test(password)===false)
+        config_users.regexp_password.test(password) === false)
     {
         return { status: "error", message: "error: password validate failed" }
     }
@@ -61,8 +62,7 @@ const controller_sign_in = async function (req, res)
     // hash_of_salted_password
     //
 
-    const salt = "labas"
-    const salted_password = password + salt
+    const salted_password = password + config_users.salt
     const hash_of_salted_password = hash_sha256_base64(salted_password)
 
     //
@@ -83,7 +83,6 @@ const controller_sign_in = async function (req, res)
         res.statusCode = 400
         res.json({ status: "error", message: error_message })
         return
-
     }
 
     const password_in_db = result_of_model_users_raed.document.password
@@ -96,20 +95,38 @@ const controller_sign_in = async function (req, res)
         res.statusCode = 400
         res.json({ status: "error", message: "error: wrong password" })
         return
-
     }
 
     //
     // generate indetification_token
     //
 
-    const indetification_token = generate_random_string(1024)
+    const identification_token = generate_random_string(1024)
+
+    //
+    // result_of_model_users_update
+    //
+
+    const result_of_model_users_update = await model_users_update(
+        { username: username },
+        { identification_token: identification_token }
+    )
+
+    if(result_of_model_users_update.status === "error")
+    {
+        const error_message = result_of_model_users_update.message
+
+        res.statusCode = 400
+        res.json({ message: error_message })
+        return
+
+    }
 
     //
     // success
     //
 
-    res.cookie("indentification_token", indetification_token, { httpOnly: true })
+    res.cookie("identification_token", identification_token, { httpOnly: true })
 
     res.statusCode = 200
     res.end()

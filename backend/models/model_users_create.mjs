@@ -34,7 +34,7 @@ const model_user_create = async function (
 
         //error: datebase query failed 
 
-        return { status: "error", message: "error:datebase query failed" }
+        return { status: "error", message: "error: datebase query failed" }
     }
 
     //

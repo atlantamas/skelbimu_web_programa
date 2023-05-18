@@ -1,7 +1,8 @@
 import mongodb from "mongodb"
 import config_skelbimai from "../config/config_skelbimai.mjs"
+import config_users from "../config/config_users.mjs"
 
-const mongodb_client = new mongodb.MongoClient(config_skelbimai.URI)
+const mongodb_client = new mongodb.MongoClient(config_users.URI)
 
 const model_skelbimai_create = async function (
     param_author,
@@ -35,11 +36,10 @@ const model_skelbimai_create = async function (
     }
     catch (err)
     {
-        mongodb_client.close()
 
         //error: datebase query failed 
 
-        return { status: "error", message: "error:datebase query failed" }
+        return { status: "error", message: "error: datebase query failed" }
     }
 
     //
